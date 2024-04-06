@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rajdhani&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <video id="video-background" autoplay loop muted>
+      <source
+        src="images/main.mp4"
+        type="video/mp4"
+      />
+      <!-- Fallback content for browsers that do not support HTML5 video -->
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Check The Weather!</h1>
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                id="weather-input"
+                class="form-control"
+                placeholder="Enter your zip code"
+              />
+            </div>
+            <div class="mb-3">
+              <button
+                id="search-button"
+                type="submit"
+                class="search_button btn btn-outline-info"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+          <div id="weather-details">
+            <div id="high"></div>
+            <div id="low"></div>
+            <div id="forecast"></div>
+            <div id="humidity"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
